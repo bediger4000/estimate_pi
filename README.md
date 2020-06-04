@@ -9,7 +9,7 @@ Estimate pi to 3 decimal places using a Monte Carlo method.
 
 Hint: The basic equation of a circle is x<sup>2</sup>+ y<sup>2</sup>= r<sup>2</sup>
 
-## Analysis
+## Program design
 
 I'm going to use Go, a perfectly fine general purpose programming language.
 
@@ -35,6 +35,10 @@ I wrote a [program](pi1.go) to choose a large number of points
 pseudo-randomly, calculate the square of the distance,
 and count all the points that lie inside the quarter of a unit circle.
 
+You just need a loop counter, a count of points inside the circle,
+seed the random number generator, and make a simple floating point
+calculation.
+
 For 100,000,000 pseudo-randomly-chosen points:
 
 ```
@@ -42,3 +46,22 @@ $ time ./pi1
 pi = 3.141572
 ./pi1  4.13s user 0.01s system 99% cpu 4.147 total
 ```
+
+## Analysis
+
+This isn't a super hard question,
+if you've seen [Physics Girl](https://qa.pbs.org/video/physics-girl-pi-darts/)
+try this in real life with darts.
+
+I'm not sure this is a good interview question to find out if
+a candidate can write a program.
+The actual program I wrote ended up as 27 lines of leisurely-formatted Go.
+It has a loop and an if-statement.
+It makes 2 calls to a library function,
+and a simple floating point calculation.
+
+It may be a good question if the candidate hasn't seen
+physics girl, or has not seen any of the large number of
+other demonstrations of this that exist in the world.
+It requires a grasp of pseudo-random numbers and plane geometry,
+and maybe a small flash of insight to marry the two.
