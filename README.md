@@ -65,3 +65,7 @@ physics girl, or has not seen any of the large number of
 other demonstrations of this that exist in the world.
 It requires a grasp of pseudo-random numbers and plane geometry,
 and maybe a small flash of insight to marry the two.
+
+## Around the web
+
+[Another version](https://ahmadhamze.github.io/estimating-pie.html) in python.
