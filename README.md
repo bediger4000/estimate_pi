@@ -47,6 +47,13 @@ pi = 3.141572
 ./pi1  4.13s user 0.01s system 99% cpu 4.147 total
 ```
 
+## Another method
+
+A method from 1733,
+(Buffon's needle)[https://arxiv.org/pdf/2103.09347.pdf],
+can also be used.
+You can compute e and pi using this method.
+
 ## Analysis
 
 This isn't a super hard question,
@@ -61,10 +68,17 @@ It makes 2 calls to a library function,
 and a simple floating point calculation.
 
 It may be a good question if the candidate hasn't seen
-physics girl, or has not seen any of the large number of
+Physics Girl, or has not seen any of the large number of
 other demonstrations of this that exist in the world.
 It requires a grasp of pseudo-random numbers and plane geometry,
 and maybe a small flash of insight to marry the two.
+
+It's possible that interviewers want candidates to talk about
+how this method converges on pi,
+and candidates should discuss that.
+
+Or maybe, since Google asked this, they just want to see
+if the candidate knows about Buffon's needle.
 
 ## Around the web
 
