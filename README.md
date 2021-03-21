@@ -50,7 +50,7 @@ pi = 3.141572
 ## Another method
 
 A method from 1733,
-(Buffon's needle)[https://arxiv.org/pdf/2103.09347.pdf],
+[Buffon's needle](https://arxiv.org/pdf/2103.09347.pdf),
 can also be used.
 You can compute e and pi using this method.
 
