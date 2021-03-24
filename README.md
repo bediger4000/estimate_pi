@@ -21,7 +21,7 @@ A quarter of a 1.0-unit radius circle fits inside a quarter of a 2x2 square.
 
 By calling `rand.Float64()` twice, once for an X value, once for a Y value,
 the program gets a point in the 1.0 x 1.0 quarter of a 2x2 square.
-The square of the distance from the origin is X*X+Y*Y.
+The square of the distance from the origin is X\*X+Y\*Y.
 If that square of the distance is less than 1.0, the point is
 inside the quarter of a circle,
 If the square of the distance is greater than 1.0, the point is outside
@@ -29,7 +29,7 @@ the quarter of a circle.
 
 If we assume that any such pseudo-randomly chosen point is uniformly
 likely to be anywhere in the 1.0 x 1.0 quarter of a square,
-and we choose enough random points, pi will be 4.0 * (inside/total).
+and we choose enough random points, pi will be 4.0 \* (inside/total).
 
 I wrote a [program](pi1.go) to choose a large number of points
 pseudo-randomly, calculate the square of the distance,
@@ -52,7 +52,19 @@ pi = 3.141572
 A method from 1733,
 [Buffon's needle](https://arxiv.org/pdf/2103.09347.pdf),
 can also be used.
-You can compute e and pi using this method.
+I wrote a program that computes pi using this method.
+
+```sh
+$ go build buffon.go
+$ time ./buffon 6 5.01 100000000
+cracks 6.000000 apart
+needle 5.010000 long
+100000000 trials
+3.141306
+./buffon 6 5.01 100000000  6.91s user 0.01s system 99% cpu 6.926 total
+```
+
+Buffon's needle converges on pi far slower than the quarter-circle method above.
 
 ## Analysis
 
