@@ -65,6 +65,11 @@ needle 5.010000 long
 ```
 
 Buffon's needle converges on pi far slower than the quarter-circle method above.
+It's also less satisfying as a method of estimating pi:
+it includes (at least) using a trig function on each iteration,
+and trig functions are inextricably linked with pi.
+My version also includes using a constant 2\*pi to when generating
+the angle that Buffon's needle forms with the horizontal cracks.
 
 ## Analysis
 
@@ -74,7 +79,8 @@ try this in real life with darts.
 
 I'm not sure this is a good interview question to find out if
 a candidate can write a program.
-The actual program I wrote ended up as 27 lines of leisurely-formatted Go.
+The actual program I wrote ended up as 27 lines of
+leisurely-formatted Go.
 It has a loop and an if-statement.
 It makes 2 calls to a library function,
 and a simple floating point calculation.
